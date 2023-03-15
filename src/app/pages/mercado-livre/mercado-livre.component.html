@@ -1,0 +1,53 @@
+<body>
+
+
+
+    <mat-toolbar class="toolbar">
+
+        <img class="logoLivre" src="../../../assets/mercadoLivre.png" alt="">
+
+        <div class="icones">
+            <img class="lupa" src="../../../assets/icons8-lupa-64.png" alt="">
+            <input class="pesquisar" type="text" placeholder="Buscar produtos, marcas e muito mais" name="search">
+
+            <img class="imgOferta" src="../../../assets/4767a14a61aad31559e82b9d13b8ad88.png" alt="">
+            <p class="oferta">Ofertas por tempo limitado</p>
+        </div>
+
+        <div class="enviar">
+            <img src="../../../assets/icons8-perímetro-virtual-64.png" alt="">
+            <p class="textoHeader">Enviar para ... <br> Rua São José...</p>
+
+            <button class="buttonEscolha" mat-button [matMenuTriggerFor]="menu">categorias ↓ </button>
+            <mat-menu #menu="matMenu">
+                <button mat-menu-item>hehe</button>
+                <button mat-menu-item>haha</button>
+            </mat-menu>
+            <div class="links">
+                <a class="link" href="">Ofertas do dia</a>
+                <a class="link" href="">Histórico</a>
+                <a class="link" href="">Supermercado</a>
+                <a class="link" href="">Moda</a>
+                <a class="link" href="">Vender</a>
+                <a class="link" href="">Contato</a>
+                <a href="#"><img class="imgUtilizador" src="../../../assets/do-utilizador.png"></a>
+
+                <button class="buttonEscolha2" mat-button [matMenuTriggerFor]="menu2">User ↓ </button>
+                <mat-menu #menu2="matMenu">
+                    <button mat-menu-item>Fazer Login</button>
+                    <button mat-menu-item>Fazer Cadastro</button>
+                </mat-menu>
+                <p class="compras">Compras</p>
+                <p class="favoritos">Favoritos</p>
+            </div>
+
+
+        </div>
+    </mat-toolbar>
+
+    <mat-drawer-container class="example-container">
+        <mat-drawer class="teste" mode="side" opened>Drawer content</mat-drawer>
+        <mat-drawer-content class="teste2">Main content</mat-drawer-content>
+      </mat-drawer-container>
+
+</body>
