@@ -20,8 +20,12 @@
 
             <button class="buttonEscolha" mat-button [matMenuTriggerFor]="menu">categorias ↓ </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item>hehe</button>
-                <button mat-menu-item>haha</button>
+                <button mat-menu-item>Veículos</button>
+                <button mat-menu-item>Tecnologia</button>
+                <button mat-menu-item>Casa e Movéis</button>
+                <button mat-menu-item>Eletrodomésticos</button>
+                <button mat-menu-item>Esportes e Fitness</button>
+                <button mat-menu-item>Ferramentas</button>
             </mat-menu>
             <div class="links">
                 <a class="link" href="">Ofertas do dia</a>
@@ -32,13 +36,15 @@
                 <a class="link" href="">Contato</a>
                 <a href="#"><img class="imgUtilizador" src="../../../assets/do-utilizador.png"></a>
 
-                <button class="buttonEscolha2" mat-button [matMenuTriggerFor]="menu2">User ↓ </button>
+                <button class="buttonEscolha2" mat-button [matMenuTriggerFor]="menu2">User </button>
                 <mat-menu #menu2="matMenu">
                     <button mat-menu-item>Fazer Login</button>
                     <button mat-menu-item>Fazer Cadastro</button>
                 </mat-menu>
                 <p class="compras">Compras</p>
                 <p class="favoritos">Favoritos</p>
+
+
             </div>
 
 
@@ -46,8 +52,115 @@
     </mat-toolbar>
 
     <mat-drawer-container class="example-container">
-        <mat-drawer class="teste" mode="side" opened>Drawer content</mat-drawer>
-        <mat-drawer-content class="teste2">Main content</mat-drawer-content>
-      </mat-drawer-container>
+        <mat-drawer class="teste" mode="side" opened>
+            <p class="menuLateral"><mat-icon>dehaze</mat-icon>Minha conta</p>
+            <div>
+                <p class="iconesCompras">
+                    <mat-icon>shopping_basket</mat-icon>Compras<mat-icon>keyboard_arrow_down</mat-icon>
+                </p>
+                <p class="iconesCompras"><mat-icon>loyalty</mat-icon>Vendas<mat-icon>keyboard_arrow_down</mat-icon></p>
+                <p class="iconesCompras"><mat-icon> store_mall_directory</mat-icon>Mercado Shops</p>
+                <p class="iconesCompras"><mat-icon>library_music</mat-icon>Vídeo e música</p>
+                <p class="iconesCompras"><mat-icon>receipt</mat-icon>Faturamento</p>
+                <p class="iconesCompras"><mat-icon> person_pin</mat-icon>Meu perfil</p>
+                <p class="iconesCompras">
+                    <mat-icon>settings</mat-icon>Configurações<mat-icon>keyboard_arrow_down</mat-icon>
+                </p>
+            </div>
+        </mat-drawer>
+
+        <mat-drawer-content style="overflow: hidden;" class="teste2">
+            <div>
+                <mat-card class="caixa">
+                    <mat-icon class="personIcon"> person_pin</mat-icon>
+                    <mat-card-content><b>Eren Yeager</b> <br>Nível 4 - Mercado Pontos</mat-card-content>
+                </mat-card>
+            </div>
+
+
+            <div>
+                <mat-card class="caixa2">
+                    <ul class="li1">
+
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> person_pin</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Meus dados</span>
+                                <span class="spans">Gerencie seus dados pessoais</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+
+
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> lock</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Segurança</span>
+                                <span class="spans">Você tem Configurações pendentes</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> credit_card</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Meus cartões</span>
+                                <span class="spans">Gerencie seus cartões</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> location_on</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Endereços</span>
+                                <span class="spans">Altere seus endereços ou adicione outro.</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+                        
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> security</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Privacidade</span>
+                                <span class="spans">Gerencie o uso das suas informações pessoais.</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> mode_comment</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Comunicações</span>
+                                <span class="spans">Escolha que tipo de informação você quer receber.</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+
+                        <li class="li2">
+                            <mat-icon class="IconesMenuDados"> monetization_on</mat-icon>
+                            <div class="divli">
+                                <span class="spans">Assinaturas</span>
+                                <span class="spans">Gerencie suas assinaturas</span>
+                            </div>
+                            <mat-icon class="iconMaior">keyboard_arrow_right</mat-icon>
+                        </li>
+                        <mat-divider class="matDivider"></mat-divider>
+                    </ul>
+                </mat-card>
+            </div>
+
+        </mat-drawer-content>
+
+
+    </mat-drawer-container>
+
+
 
 </body>

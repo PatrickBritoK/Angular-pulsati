@@ -1,11 +1,12 @@
 body {
-    overflow: hidden;
+  overflow: scroll;
 }
 
 .toolbar {
-  background-color: rgb(218, 218, 23);
+  background-color: #fff159;
   width: 100vw;
   height: 12vh;
+  border-bottom: 1px solid grey;
 
   .logoLivre {
     width: 90px;
@@ -69,7 +70,7 @@ body {
   .buttonEscolha {
     width: 5rem;
     height: 1.5rem;
-    background-color: rgb(218, 218, 23);
+    background-color: #fff159;
     border: none;
     margin-top: 1.9rem;
     margin-left: 1rem;
@@ -110,7 +111,7 @@ body {
     .buttonEscolha2 {
       width: 5rem;
       height: 1.5rem;
-      background-color: rgb(218, 218, 23);
+      background-color: #fff159;
       border: none;
       margin-top: 0.3rem;
       padding-right: 2.9rem;
@@ -122,25 +123,102 @@ body {
       }
     }
     .compras {
-        display: flex;
-        
+      display: flex;
     }
     .favoritos {
-        display: flex;  
-        margin-right: 10rem;
+      display: flex;
+      margin-right: 1rem;
     }
   }
 }
 
-
 .example-container {
-    height: 100vh;
+  height: 100vh;
+  
 }
 .teste {
-    background-color: greenyellow;
-    width: 12vw;
-    border-right: 2px solid black;
+  background-color: #ffffff;
+  width: 12vw;
+  border-right: 2px solid grey;
+
+  .menuLateral {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    margin-left: 1.1rem;
+    font-size: 1.3rem;
+    gap: 1rem;
+  }
+  .iconesCompras {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+    margin-left: 1.1rem;
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
 }
 .teste2 {
-    background-color: #EDEDED;
-}
+  background-color: #e7e7e7;
+
+  .caixa {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: white;
+    width: 35rem;
+    height: 5rem;
+    margin-left: 28rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 12rem;
+    
+  }
+  .personIcon {
+    transform: scale(2);
+  }
+ 
+  }
+  .caixa2 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    width: 35rem;
+    margin-left: 28rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-right: 12rem;
+  }
+  .li1 {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+  .li2 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+  }
+  .spans {
+    // padding-right: 9rem;
+    margin-left: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .iconMaior {
+    display: flex;
+    position: absolute;
+    right: 1rem;
+    
+  }
+  .matDivider {
+    display: flex;
+    width: 29rem;
+    margin-bottom: 2rem;
+  }
+  .IconesMenuDados {
+    transform: scale(2);
+    color: #3483fa;
+  }
+
